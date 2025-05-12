@@ -1,8 +1,6 @@
 import os
 import fitz  # PyMuPDF
 import docx
-import pandas as pd
-import numpy as np
 import chardet
 
 class DocumentLoader:
