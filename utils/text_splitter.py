@@ -22,6 +22,9 @@ class TextSplitter:
         Returns:
             List[str]: A list of text chunks.
         """
+        if not text.strip():
+            return []
+
         if method == "sentence":
             return TextSplitter._split_by_sentence(text, chunk_size, overlap)
         elif method == "token":
