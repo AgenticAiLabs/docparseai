@@ -11,16 +11,18 @@ class DocumentLoader:
     @staticmethod
     def load(file_path: str) -> str:
         """Load document content from a supported file type"""
-
-        ext = os.path.splitext(file_path)[1].lower()
-        if ext == '.pdf':
-            return DocumentLoader._load_pdf(file_path)
-        elif ext == '.docx':
-            return DocumentLoader._load_docx(file_path)
-        elif ext == '.txt':
-            return DocumentLoader._load_txt(file_path)
-        else:
-            raise ValueError(f"Unsupported file type: {ext}")
+        try:
+            ext = os.path.splitext(file_path)[1].lower()
+            if ext == '.pdf':
+                return DocumentLoader._load_pdf(file_path)
+            elif ext == '.docx':
+                return DocumentLoader._load_docx(file_path)
+            elif ext == '.txt':
+                return DocumentLoader._load_txt(file_path)
+            else:
+                raise ValueError(f"Unsupported file type: {ext}")
+        except fitz.FileNotFoundError:
+            raise FileNotFoundError(f"File not found: {file_path}")
 
     @staticmethod
     def _load_pdf(file_path: str) -> str:
