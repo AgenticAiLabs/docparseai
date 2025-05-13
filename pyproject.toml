@@ -4,31 +4,22 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docparseai"
-version = "0.1.0"
+version = "0.1.1"
 description = "Document parsing, chunking, embedding, and vector retrieval made easy."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
+
 authors = [
-  { name="Paul Onyekwelu", email="onyekwelupaulo@gmail.com" },
-  { name="Ezenna Jide", email="" },
+  { name = "Paul Onyekwelu", email = "paulonyekweluo@gmail.com" },
+  { name = "Ezenna Jide", email = "ezenna-jide@gmail.com" },
 ]
 
-dependencies = [
-  "numpy",
-  "faiss-cpu",
-  "chardet",
-  "pymupdf",
-  "python-docx"
-]
+dependencies = ["numpy", "faiss-cpu", "chardet", "pymupdf", "python-docx"]
 
 [project.optional-dependencies]
-embedding = [
-  "sentence-transformers"
-]
-advanced = [
-  "spacy"
-]
+embedding = ["sentence-transformers"]
+advanced = ["spacy"]
 
 [project.urls]
 Homepage = "https://github.com/DocParseAI/docparseai"
