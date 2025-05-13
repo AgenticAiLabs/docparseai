@@ -10,3 +10,7 @@ rmpyc:
 
 install:
 	pip install -e .
+
+deploy:
+	python -m build
+	twine upload dist/*
