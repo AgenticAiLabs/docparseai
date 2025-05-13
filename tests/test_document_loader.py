@@ -1,6 +1,6 @@
 import os
 import pytest
-from docparseai.loaders.document_loader import DocumentLoader
+from docparseai.document_loader import DocumentLoader
 
 SUPPORTED_FILES = ["sample.txt", "sample.pdf", "sample.docx"]
 

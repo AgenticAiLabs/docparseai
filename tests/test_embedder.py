@@ -3,7 +3,7 @@ import pytest
 # Skip this whole file if sentence-transformers isn't installed
 pytest.importorskip("sentence_transformers")
 
-from docparseai.embeddings.embedder import Embedder
+from docparseai.embedder import Embedder
 
 class TestEmbedder:
     def test_single_text_embedding(self):

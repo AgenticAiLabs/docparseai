@@ -1,5 +1,5 @@
 import pytest
-from docparseai.vectorstore.faiss_store import FAISSStore
+from docparseai.faiss_store import FAISSStore
 
 class TestFAISSStore:
     def test_index_and_query(self):
