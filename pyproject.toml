@@ -11,7 +11,7 @@ requires-python = ">=3.8"
 license = { text = "MIT" }
 
 authors = [
-  { name = "Paul Onyekwelu", email = "onyekwelupaulo@gmail.com" },
+  { name = "Paul Onyekwelu", email = "paulonyekweluo@gmail.com" },
   { name = "Ezenna Jide", email = "ezenna-jide@gmail.com" },
 ]
 
