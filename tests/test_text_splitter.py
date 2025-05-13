@@ -1,5 +1,5 @@
 import pytest
-from docparseai.utils.text_splitter import TextSplitter
+from docparseai.text_splitter import TextSplitter
 
 SHORT_TEXT = "Hello world. This is a test."
 LONG_TEXT = (
