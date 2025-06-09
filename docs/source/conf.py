@@ -3,7 +3,7 @@
 project = 'docparseai'
 copyright = '2025, Paul Onyekwelu'
 author = 'Paul Onyekwelu'
-release = '0.1.1'
+release = '0.1.2'
 
 extensions = []
 
