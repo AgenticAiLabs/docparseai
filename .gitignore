@@ -174,3 +174,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+docs/make.bat
+docs/Makefile
+
