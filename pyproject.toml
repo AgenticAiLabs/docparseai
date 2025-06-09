@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "docparseai"
-version = "0.1.0"
+version = "0.1.2"
 description = "Document parsing, chunking, embedding, and vector retrieval made easy."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
-  { name="Paul Onyekwelu", email="onyekwelupaulo@gmail.com" }
+  { name="Paul Onyekwelu", email="paulonyekweluo@gmail.com" }
 ]
 
 dependencies = [
@@ -30,8 +30,9 @@ advanced = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-username/docparseai"
-Repository = "https://github.com/your-username/docparseai"
+Homepage = "https://docparseai.readthedocs.io/en/latest/"
+Repository = "https://github.com/AgenticAiLabs/docparseai"
+Issues = "https://github.com/AgenticAiLabs/docparseai/issues"
 
 [tool.setuptools]
 packages = ["docparseai"]
