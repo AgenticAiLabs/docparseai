@@ -176,5 +176,4 @@ cython_debug/
 .pypirc
 
 docs/make.bat
-docs/Makefile
 
