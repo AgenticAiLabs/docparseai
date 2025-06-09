@@ -59,7 +59,7 @@ chunks = TextSplitter.split(text, chunk_size=500, overlap=50)
 
 #### Usage (with optional dependency):
 ```python
-from docparseai.embeddings.embedder import Embedder
+from docparseai.embedder import Embedder
 
 # Generate embeddings for chunks
 embedder = Embedder()  # By default, uses `all-MiniLM-L6-v2`
@@ -90,7 +90,7 @@ top_k_results = store.query(query_embedding, top_k=5)
 ```python
 from docparseai.document_loader import DocumentLoader
 from docparseai.text_splitter import TextSplitter
-from docparseai.embeddings.embedder import Embedder
+from docparseai.embedder import Embedder
 from docparseai.vectorstore.faiss_store import FAISSStore
 
 # 1. Load document
